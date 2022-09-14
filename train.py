@@ -1,13 +1,13 @@
 import sys
 import os
 os.environ['TL_BACKEND'] = 'torch'
-tlxzoo_path = os.path.abspath(os.path.join('/mnt/Disk8T/donght/SISNET-MEH/TLX/TLXZoo-main/'))
+tlxzoo_path = os.path.abspath(os.path.join('TLX/TLXZoo-main/'))
 sys.path.append(tlxzoo_path)
 print(sys.path)
 
 from tlxzoo.datasets import DataLoaders
 from tlxzoo.vision.transforms import BaseVisionTransform
-from tlxzoo.vision.image_classification import ImageClassification
+from image_classification import ImageClassification
 import tensorlayerx as tlx
 
 tlx.set_device(device='GPU',id=1)
